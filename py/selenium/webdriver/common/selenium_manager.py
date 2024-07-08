@@ -129,6 +129,8 @@ class SeleniumManager:
         args.append("python")
         args.append("--output")
         args.append("json")
+        args.append("--cache-path")
+        args.append("/tmp/.cache/selenium")
 
         command = " ".join(args)
         logger.debug("Executing process: %s", command)
